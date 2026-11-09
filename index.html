@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK St. George, Taiping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="wrap nav">
+      <a href="#top" class="brand">
+        <img
+          src="assets/logo.jpeg"
+          alt="SGI crest"
+          onerror="this.remove(); document.getElementById('crestSvg').style.display = 'block'">
+        <svg id="crestSvg" viewBox="0 0 34 40">
+          <path d="M17 1 L33 5 V18 C33 29 26 36 17 39 C8 36 1 29 1 18 V5 Z" fill="#1f5a3d" stroke="#fff" stroke-width="1.5" />
+          <text x="17" y="24" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#fff">SGI</text>
+        </svg>
+        <div>
+          <strong>St. George's Institution</strong>
+          <span>SMK St. George · Taiping</span>
+        </div>
+      </a>
+      <button class="menu" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+      <ul id="links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#donate" class="give">Give to SGI</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <h1>St. George's Institution, Taiping</h1>
+      <p>Est. 1915 · <span class="motto">Honor Virtutis Praemium</span></p>
+      <div class="actions">
+        <a href="#donate" class="btn btn-solid">Donate</a>
+        <a href="#events" class="btn btn-line">Events</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div class="img">
+        <img
+          src="assets/school-front.jpg"
+          alt="SMK St. George, Station Road, Taiping"
+          loading="lazy"
+          onerror="this.outerHTML='<div class=&quot;ph&quot;></div>'">
+      </div>
+      <div>
+        <h2>Over a century of tradition, discipline and virtue</h2>
+        <p>Founded by the De La Salle Brothers in 1915, SGI is one of the oldest schools in Malaysia, and home to generations of Old Georgians.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ol class="timeline">
+        <li>
+          <span class="yr">1914</span>
+          <div>
+            <h3>A school for Taiping</h3>
+            <p>Brother James Joseph Byrne proposes a school. The Kwa family donates the land.</p>
+          </div>
+        </li>
+        <li>
+          <span class="yr">1915</span>
+          <div>
+            <h3>Doors open</h3>
+            <p>SGI opens on 18 January.</p>
+          </div>
+        </li>
+        <li>
+          <span class="yr">1942</span>
+          <div>
+            <h3>The war years</h3>
+            <p>The school is closed during the Japanese Occupation.</p>
+          </div>
+        </li>
+        <li>
+          <span class="yr">1946</span>
+          <div>
+            <h3>Return and rebuild</h3>
+            <p>Classes return and rebuilding begins.</p>
+          </div>
+        </li>
+        <li>
+          <span class="yr">1965</span>
+          <div>
+            <h3>Golden jubilee</h3>
+            <p>SGI celebrates 50 years.</p>
+          </div>
+        </li>
+        <li>
+          <span class="yr">2015</span>
+          <div>
+            <h3>The centennial</h3>
+            <p>A parade and a homecoming dinner with over 1,400 Old Georgians.</p>
+          </div>
+        </li>
+        <li>
+          <span class="yr">Today</span>
+          <div>
+            <h3>SMK St. George</h3>
+            <p>A landmark on the Taiping Heritage Trail.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="soft" id="events">
+    <div class="wrap">
+      <h2>Events</h2>
+      <div class="events">
+        <div class="event">
+          <div class="d">12</div>
+          <div class="m">December 2026</div>
+          <h3>Old Georgians Reunion Dinner</h3>
+          <div class="where">School grounds · 7.30 pm</div>
+          <a href="#" class="btn btn-solid">RSVP</a>
+        </div>
+        <div class="event">
+          <div class="d">18</div>
+          <div class="m">January 2027</div>
+          <h3>Founders' Day</h3>
+          <div class="where">School hall · 9.00 am</div>
+          <a href="#" class="btn btn-line">Details</a>
+        </div>
+        <div class="event">
+          <div class="d">8</div>
+          <div class="m">November 2026</div>
+          <h3>Happy Deepavali</h3>
+          <div class="where">Public holiday</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <figure class="full">
+          <img src="assets/gallery/centennial.jpg" alt="SGI centennial celebration" loading="lazy" onerror="this.outerHTML='<div class=&quot;ph&quot;></div>'">
+          <figcaption>Centennial</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gallery/esda2025.jpg" alt="ESDA 2025" loading="lazy" onerror="this.outerHTML='<div class=&quot;ph&quot;></div>'">
+          <figcaption>ESDA 2025</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gallery/f6graduation.jpg" alt="Form 6 graduation" loading="lazy" onerror="this.outerHTML='<div class=&quot;ph&quot;></div>'">
+          <figcaption>Form 6 Graduation</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gallery/first-scout-troop.jpg" alt="The first Taiping scout troop" loading="lazy" onerror="this.outerHTML='<div class=&quot;ph&quot;></div>'">
+          <figcaption>The First Taiping Scout Troop</figcaption>
+        </figure>
+        <figure class="wide">
+          <img style="object-position:center 75%" src="assets/gallery/scouts-trophies.jpg" alt="SGI scouts with their trophies" loading="lazy" onerror="this.outerHTML='<div class=&quot;ph&quot;></div>'">
+          <figcaption>Scouts and their trophies</figcaption>
+        </figure>
+        <figure>
+          <img style="object-position:center top" src="assets/gallery/scouts-camp.jpg" alt="SGI scouts at camp" loading="lazy" onerror="this.outerHTML='<div class=&quot;ph&quot;></div>'">
+          <figcaption>Scouts at camp</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="donate">
+    <div class="wrap donate">
+      <div class="intro">
+        <h2>Our Funding Sources</h2>
+        <ul class="sources">
+          <li>
+            <h3>The La Salle Brothers</h3>
+            <p>Supporting SGI since they founded it in 1915.</p>
+          </li>
+          <li>
+            <h3>Parents and the PIBG</h3>
+            <p>Helping fund school programmes and activities.</p>
+          </li>
+          <li>
+            <h3>Old Georgians and Benefactors</h3>
+            <p>Giving generously to the school over the years.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="appeal">
+        <h3>Give to SGI</h3>
+        <p>We hope to build a school that can sustain itself through the support of its own community, so that SGI can keep growing for generations to come.</p>
+        <p>We look to you in our need: for the repair and restoration of our heritage buildings, and for the running of the school and its programmes.</p>
+        <p>Thank you in advance for your kindness and generosity.</p>
+        <div class="bank">
+          <b>Contributions may be banked in to</b>
+          <dl>
+            <dt>Account name</dt><dd>[Official account name]</dd>
+            <dt>Bank</dt><dd>[Bank]</dd>
+            <dt>Account no.</dt><dd>[Account number]</dd>
+            <dt>Reference</dt><dd>Name + batch</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong>SMK St. George</strong>
+        Jalan Stesen, 34000 Taiping, Perak
+      </div>
+      <div>
+        [Phone] · [Email]<br>
+        © <span id="yr"></span> SMK St. George, Taiping
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lb">
+    <div class="frame" id="lbFrame"></div>
+    <p id="lbCap"></p>
+  </div>
+
+  <script>
+    const hd = document.getElementById('header');
+    const sc = () => hd.classList.toggle('scrolled', scrollY > 40);
+    addEventListener('scroll', sc);
+    sc();
+
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('#links a').forEach(a => {
+      a.onclick = () => document.getElementById('links').classList.remove('open');
+    });
+
+    const lb = document.getElementById('lb');
+    document.querySelectorAll('.gallery figure').forEach(f => {
+      f.onclick = () => {
+        document.getElementById('lbFrame').innerHTML = f.querySelector('.ph,img').outerHTML;
+        document.getElementById('lbCap').textContent = f.querySelector('figcaption').textContent;
+        lb.classList.add('open');
+      };
+    });
+    lb.onclick = () => lb.classList.remove('open');
+    document.addEventListener('keydown', e => e.key === 'Escape' && lb.classList.remove('open'));
+  </script>
+</body>
+</html>
