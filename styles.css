@@ -185,12 +185,20 @@ header.scrolled {
 
 /* Hero */
 .hero {
-  padding: 220px 0 150px;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 80px;
   color: #fff;
   /* Green overlay on top of the photo; lower the alpha values to show more of the photo */
   background:
     linear-gradient(170deg, rgba(36, 101, 74, 0.88) 0%, rgba(26, 77, 54, 0.9) 55%, rgba(22, 63, 45, 0.94) 100%),
     url(assets/school.jpg) center / cover no-repeat;
+}
+
+.hero .wrap {
+  width: 100%;
 }
 
 .hero h1 {
@@ -559,7 +567,7 @@ footer .credits a {
   }
 
   .hero {
-    padding: 150px 0 100px;
+    padding: 110px 0 60px;
   }
 }
 
